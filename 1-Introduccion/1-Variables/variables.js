@@ -1,0 +1,1 @@
+// Variables: son espacios en memoria donde podemos guardar informacion
