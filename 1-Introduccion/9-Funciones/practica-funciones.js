@@ -31,14 +31,22 @@ console.log(calcularPrecioConDescuento(30));   // Debe imprimir 30 (sin descuent
 
 //Solucion
 const calcularPrecioConDescuento =  (precio) => {
+    let precioFinal;
     if(precio >= 100){
-       return (precio*20)/100;
-    }else if(precio >= 50 && precio - 100 ){
-        return precio - 0.10;
-    }else if(precio < 50){
-        return precio - 0.0
+    //Aplicar descuento del 20%
+       const descuento = precio * 0.20;
+       precioFinal = precio - descuento;
+    }else if(precio >= 50 && precio < 100 ){
+        //Aplicar descuento del 10%
+       const descuento = precio * 0.10;
+       precioFinal = precio - descuento;
+       
+    }else{
+        // noo se aplica descuento
+        precioFinal = precio;
+    
     }
-
+    return precioFinal;
 }
 
-console.log(calcularPrecioConDescuento(120))
+console.log(calcularPrecioConDescuento(30))
