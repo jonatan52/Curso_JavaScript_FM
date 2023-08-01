@@ -12,7 +12,7 @@ const colores = ['Amarillo ', 'Azul ', 'Rojo'];
 console.log(colores.join('*'));
 
 // 📌 .sort()
-// Nos permite oredenar un arreglo de cadenas de texto, de forma alfabeticamente
+// Nos permite ordenar un arreglo de cadenas de texto, de forma alfabeticamente
 
 const letras = ['c','d','b','a'];
 console.log(letras.sort()); // tambien organiza numeros
